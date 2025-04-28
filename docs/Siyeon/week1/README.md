@@ -12,7 +12,7 @@
 - root 컴포넌트를 내보내지 않았기 때문에 이 샌드박스는 작동하지 않습니다.
 => ``export default``를 붙여줌
 
-``
+```
 export default function Profile() {
   return (
     <img
@@ -21,23 +21,23 @@ export default function Profile() {
     />
   );
 }
-``
+```
 
 ##### 2. return문을 고치세요
 - 괄호를 추가하고 세미콜론 위치를 바꿨다.
 
-``
+```
 export default function Profile() {
   return (
     <img src="https://blog.kakaocdn.net/dn/SjrCh/btsJpIIayCv/PPj9shqxiktJ0jMtXdw8UK/img.jpg" alt="아이유" />
   );
 }
 
-``
+```
 
 ##### 3. 실수를 찾아내세요
 - 컴포넌트는 반드시 맨 앞글자가 대문자로 시작해야 한다!
-``
+```
 function Profile() {
   return (
     <img
@@ -57,11 +57,11 @@ export default function Gallery() {
     </section>
   );
 }
-``
+```
 
 ##### 4. 컴포넌트를 새로 작성해 보세요.
 - 똑같이 갤러리 같은 걸 하려다가 새로 리스트 컴포넌트..를 만들어보았다
-``
+```
 // 아래에 컴포넌트를 작성해 보세요!
 function List(){
   return(
@@ -81,7 +81,7 @@ export default function Todos(){
     </div>
   )
 }
-``
+```
 
 
 #### 컴포넌트 import 및 export하기
@@ -89,7 +89,7 @@ export default function Todos(){
 ##### 컴포넌트를 한 단계 더 분리하기
 - import를 좀 더 세분화하여서 분리할 수 있다는 것을 깨달았다! 분리를 이렇게 하는 거구나~ ..
 - App.js
-``
+```
 import Gallery from './Gallery.js';
 
 export default function App() {
@@ -100,9 +100,9 @@ export default function App() {
   );
 }
 
-``
+```
 - Gallery.js
-``
+```
 import {Profile} from './Profile.js';
 
 export default function Gallery() {
@@ -116,10 +116,10 @@ export default function Gallery() {
   );
 }
 
-``
+```
 
 - Profile.js
-``
+```
 export function Profile() {
   return (
     <img
@@ -128,7 +128,7 @@ export function Profile() {
     />
   );
 }
-``
+```
 
 
 
@@ -136,7 +136,7 @@ export function Profile() {
 
 ##### HTML을 JSX로 변환해보기
 - <br>태그도 닫아줘야 한다니 익숙하지가 않아서 신기했다..
-``
+```
 export default function Bio() {
   return (
     <>
@@ -151,14 +151,14 @@ export default function Bio() {
     </>
   );
 }
-``
+```
 
 
 #### 중괄호가 있는 jsx에서 자바스크립트 사용하기
 
 ##### 1. 실수 고치기
 - .을 이용해서 객체에 접근해주게 변경했다
-``
+```
 const person = {
   name: 'Gregorio Y. Zara',
   theme: {
@@ -184,10 +184,11 @@ export default function TodoList() {
     </div>
   );
 }
-``
+```
 
 ##### 2. 정보를 객체로 추출하기
 - 객체에 이미지를 담고, TodoList()쪽 src도 중괄호를 이용해 주었다.
+```
 const person = {
   name: 'Gregorio Y. Zara',
   theme: {
@@ -214,11 +215,11 @@ export default function TodoList() {
     </div>
   );
 }
-
+```
 
 #### 3. JSX 중괄호 안에 표현식 작성하기
 - 으어 이건 생각 못하고 답을 봤는데 중괄호 안이 표현식이라고 생각해야 하는구나...
-``
+```
 const baseUrl = 'https://i.imgur.com/';
 const person = {
   name: 'Gregorio Y. Zara',
@@ -247,7 +248,7 @@ export default function TodoList() {
     </div>
   );
 }
-``
+```
 
 
 #### 컴포넌트에 props 전달하기
