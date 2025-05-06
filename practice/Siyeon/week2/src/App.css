@@ -26,6 +26,12 @@
   width: 20rem;
   color: white;
   text-align: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.names:hover{
+  background-color: rgb(63, 63, 255);
 }
 
 .image{
