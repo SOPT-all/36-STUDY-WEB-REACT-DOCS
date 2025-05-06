@@ -1,1 +1,33 @@
+.section{
+  display: flex;
+  flex-direction: row;
+  flex: 6;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
 
+.entire-card{
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  align-items: center;
+  padding: 2rem;
+}
+
+.detail{
+  background-color: rgb(240, 240, 240);
+  width: 20rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.names{
+  background-color: blue;
+  width: 20rem;
+  color: white;
+  text-align: center;
+}
+
+.image{
+  width: 15rem;
+}
