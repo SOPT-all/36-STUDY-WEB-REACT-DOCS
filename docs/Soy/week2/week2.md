@@ -505,7 +505,8 @@ function MyComponent(props) {
 
 # 트리로서의 UI
 
-![image.png](\images\1.webp)
+![image](https://github.com/user-attachments/assets/06b18baf-3c1d-48ff-b815-0157a9d9760b)
+
 
 React는 컴포넌트로부터 UI 트리를 생성한다. React 앱의 컴포넌트 간의 관계를 관리하고 모델링하기 위해 트리 구조를 사용한다. 
 
@@ -521,7 +522,8 @@ Root 노드 (=루트 컴포넌트)는 React가 렌더링하는 첫 번째 컴포
 
 리프 컴포넌트는 트리의 맨 아래에 있으며 자식 컴포넌트가 없다. 
 
-![image.png](\images\2.png)
+![conditional_render_tree](https://github.com/user-attachments/assets/e63c2385-82e0-4b21-9dfd-f440e4d4e063)
+
 
 렌더 트리는 React 앱의 단일 렌더링을 나타낸다. 조건부 렌더링을 사용하면, 서로 다른 렌더링에서 렌더 트리가 다른 컴포넌트를 렌더링할 수 있다. 
 
