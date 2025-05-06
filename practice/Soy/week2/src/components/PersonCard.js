@@ -16,17 +16,21 @@ export default function PersonCard() {
 
     return(
         <section className="CardContainer">
-            {people.map((person) => (
-                <div key={person.id}>
-                    <button onClick={() => handleOpenDetail(person)}>
-                        {person.name}
-                    </button>
+            <div className="buttonGroup">
+                {people.map((person) => (
+                    <div key={person.id}>
+                        <button onClick={() => handleOpenDetail(person)}>
+                            {person.name}
+                        </button>
+                    </div>
+                ))}
+            </div>
 
-                    {selectedPerson && person.id === selectedPerson.id && 
-                        <PersonDetail person={selectedPerson}/>
-                    }
+            {selectedPerson &&  
+                <div className="detailWrapper">
+                    <PersonDetail person={selectedPerson}/>
                 </div>
-            ))}
+            }
         </section>
     )
 }

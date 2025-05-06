@@ -4,7 +4,7 @@ export const people = [
         name: 'Marie Curie',
         field: 'Chemistry',
         achievement: 'Radioactivity Research',
-        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/69/Marie_Curie_c1920.jpg',
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Marie_Curie_c._1920s.jpg/250px-Marie_Curie_c._1920s.jpg',
     },
     {
         id: 2,
@@ -18,6 +18,6 @@ export const people = [
         name: 'Ada Lovelace',
         field: 'Computing',
         achievement: 'First Computer Programmer',
-        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Ada_Lovelace_portrait.jpg',
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/f/f9/Ada_Byron_daguerreotype_by_Antoine_Claudet_1843_or_1850_-_cropped_%28cropped%29.png',
     },
 ];
