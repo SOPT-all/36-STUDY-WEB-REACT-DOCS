@@ -1,0 +1,20 @@
+.DetailContainer{
+    border-radius: 20px;
+    background-color: lightsteelblue;
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+    align-self: center;
+    border-radius: 10px;
+}
